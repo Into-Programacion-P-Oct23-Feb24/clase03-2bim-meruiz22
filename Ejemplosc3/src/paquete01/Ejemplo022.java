@@ -24,7 +24,8 @@ public class Ejemplo022 {
 
         // forma 1
         int[][] arreglo1 = new int[3][4]; //
-        System.out.printf("Uso de la opción length: %d\n", arreglo1.length);
+        System.out.printf("Uso de la opción length: %d\n",
+                arreglo1.length);
 
         System.out.printf("Valor en la posición [0][2]\n", arreglo1[0][2]);
 
@@ -36,7 +37,7 @@ public class Ejemplo022 {
                         fila, col);
                 arreglo1[fila][col] = entrada.nextInt();
                 if (arreglo1[fila][col] >= 10 && arreglo1[fila][col] % 2 == 0) {
-                    arreglo1[fila][col] =0;
+                    arreglo1[fila][col] = 0;
                 }
 
             }
