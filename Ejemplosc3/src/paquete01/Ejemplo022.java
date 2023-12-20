@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo02 {
+public class Ejemplo022 {
 
     /**
      * @param args the command line arguments
@@ -32,9 +32,12 @@ public class Ejemplo02 {
         for (int fila = 0; fila < arreglo1.length; fila++) {
             for (int col = 0; col < arreglo1[fila].length; col++) {
                 System.out.printf("Ingrese el valor para posicion fila %d "
-                        + "columna %d ",
+                        + "columna%d\n",
                         fila, col);
                 arreglo1[fila][col] = entrada.nextInt();
+                if (arreglo1[fila][col] >= 10 && arreglo1[fila][col] % 2 == 0) {
+                    arreglo1[fila][col] =0;
+                }
 
             }
         }
